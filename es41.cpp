@@ -10,17 +10,17 @@ float carni;
 float dolci;
 
 
-void aquisizione();
+void acquisizione();
 float media();
 
 int main()
 {
-   aquisizione();
-   cout<<"la media degli incassi giornalieri è: " <<media();
+   acquisizione();
+   cout<<"la media degli incassi giornalieri Ã¨: " <<media();
  return 0;
 }
 
-void aquisizione()
+void acquisizione()
 {
   cout<<"inserire l'incasso del reparto verdure: ";
   cin>>verdure;
