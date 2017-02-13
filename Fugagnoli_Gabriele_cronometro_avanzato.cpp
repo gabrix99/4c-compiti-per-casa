@@ -49,7 +49,12 @@ Cronometro::Cronometro(){
     inizio = 0;
 	fine= 0;
 	started= false;
-	i=0;
+	for(i=0; i<10; i++)
+    {
+        tempi[i]=0;
+        controllo[i]=false;
+    }
+    i=0;
 }
 
 void Cronometro::start(){
@@ -100,12 +105,14 @@ void Cronometro::selezione(){
   cin>>i;
   cout<<endl;
   if(9<i<0)
-  {do
-      {cout<<"numero inserito non compreso tra 0 e 9, reinserirlo: ";
+  {
+      do
+      {
+      cout<<"numero inserito non compreso tra 0 e 9, reinserirlo: ";
       cin>>i;
       cout<<endl;
       }
-   while(9<i<0)
+      while(9<i<0);
   }
 else{}
   cout<<"tempo numero " <<i <<" selezionato" <<endl <<endl;
