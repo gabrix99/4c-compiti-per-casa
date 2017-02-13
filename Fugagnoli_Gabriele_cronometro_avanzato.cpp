@@ -99,7 +99,15 @@ void Cronometro::selezione(){
 
   cin>>i;
   cout<<endl;
-
+  if(9<i<0)
+  {do
+      {cout<<"numero inserito non compreso tra 0 e 9, reinserirlo: ";
+      cin>>i;
+      cout<<endl;
+      }
+   while(9<i<0)
+  }
+else{}
   cout<<"tempo numero " <<i <<" selezionato" <<endl <<endl;
 
 }
